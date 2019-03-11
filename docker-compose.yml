@@ -2,7 +2,7 @@ version: '3'
 
 #Define services/containers to be run
 services:
-  client: #Name of the first service
+  client: #Name of the first service!
     container_name: react-client-container
     restart: always
     build: client # Specify directory of the Dockerfile
