@@ -47,7 +47,7 @@ const users = [{
   }];
 
  
-app.get('/', function (req, res) {
+app.get('/api', function (req, res) {
   res.json(users)
 })
  
