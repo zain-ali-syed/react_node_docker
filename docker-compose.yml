@@ -7,7 +7,7 @@ services:
     restart: always
     build: client # Specify directory of the Dockerfile
     ports:
-     - "3000:80" # Specify port mapping
+     - "80:80" # Specify port mapping
 
   server: #Name of the second service
     container_name: node-express-container
