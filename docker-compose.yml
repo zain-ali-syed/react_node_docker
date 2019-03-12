@@ -3,14 +3,14 @@ version: '3'
 #Define services/containers to be run
 services:
   client: #Name of the first service!
-    container_name: react-client-container
     restart: always
     build: client # Specify directory of the Dockerfile
     ports:
-     - "80:80" # Specify port mapping
+     - "3000:80" # Specify port mapping
+    links:
+     - server
 
   server: #Name of the second service
-    container_name: node-express-container
     restart: always
     build: server
     ports:

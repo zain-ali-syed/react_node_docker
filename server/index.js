@@ -5,7 +5,7 @@ var app = express()
 app.use(cors())
 
 const users = [{
-    "first_name": "Maximilien",
+    "first_name": "Maximilien Easy",
     "last_name": "Merriton",
     "email": "mmerriton0@springer.com"
   }, {
