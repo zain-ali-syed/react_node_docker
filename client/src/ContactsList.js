@@ -8,7 +8,7 @@ class ContactsList extends Component {
     }
 
     componentDidMount(){
-        fetch("/api")
+        fetch("http://178.62.17.175:4000")
         .then(res => res.json())
         .then(contacts => this.setState(() => ({contacts})));
     }
